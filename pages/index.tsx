@@ -3,6 +3,7 @@ import About from "../components/About/index";
 import Footer from "../components/Footer/index";
 import Skills from "../components/Skills/index";
 import Top from "../components/Top/index";
+import Achievement from "../components/Achievement";
 import Meta from "../components/_common/Meta";
 
 const Home: NextPage = () => {
@@ -13,6 +14,7 @@ const Home: NextPage = () => {
         <Top />
         <About />
         <Skills />
+        <Achievement />
         <Footer />
       </div>
     </div>
