@@ -3,7 +3,6 @@ import Head from "next/head";
 const Meta = ({
   pageTitle,
   pageUrl,
-  pageOgImage,
   noIndex = false,
 }: {
   pageTitle: string;
