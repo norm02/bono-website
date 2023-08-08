@@ -8,7 +8,7 @@ const Top: NextPage = () => {
     >
       <div className="bg-gray-200 w-4/5 h-4/5 rounded-lg shadow-lg flex flex-col justify-center items-center">
         <div className="bg-orange-300 w-2/3 h-48 rounded-lg shadow-lg flex justify-center item-center">
-          <p className="text-white text-2xl font-bold flex items-center justify-center">
+          <p className="text-white text-6xl font-bold flex items-center justify-center">
             bono-website
           </p>
         </div>

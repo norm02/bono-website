@@ -3,22 +3,68 @@ import type { NextPage } from "next";
 const About: NextPage = () => {
   return (
     <div id="About" className="bg-blue-300 px-6 min-h-screen">
-      <div className=" flex flex-1 flex-col w-11/12 justify-center items-center m-auto max-w-2xl">
-        <div className="text-white pt-40 pb-20 text-4xl">ABOUT</div>
-        <div className="flex flex-row justify-center items-center">
-          <div className="img-container w-1/2 relative">
-            <img src="/images/miso-icon.png" alt="About Image" />
-            <div className="bg-blue-100 mb-4 p-2 rounded-md shadow-md text-center w-full">
-              <p className="">bono</p>
+      <div className="flex flex-col items-center justify-center w-11/12 max-w-2xl m-auto">
+        <div className="text-white text-4xl pt-40">ABOUT ME</div>
+        <div className="flex items-center justify-center mt-8">
+          <div className="flex flex-col items-center justify-center w-1/3">
+            <img
+              alt="About Image"
+              className="w-1/2"
+              src="/images/miso-icon.png"
+            />
+            <div className="text-white p-2 text-center w-44 rounded-md text-2xl mb-4">
+              bono
+            </div>
+            <div className="flex items-center justify-center mt-4">
+              <a
+                href="https://twitter.com/bonomodel"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <img
+                  alt="X Icon"
+                  className="w-8 h-8 mr-4"
+                  src="/images/logo/x-logo.png"
+                />
+              </a>
+              <a
+                href="https://bonomodel.hatenablog.com/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <img
+                  alt="hatena Icon"
+                  className="w-12 h-12 mr-4"
+                  src="/images/logo/hatenablog-logo.svg"
+                />
+              </a>
+              <a
+                href="https://github.com/norm02"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <img
+                  alt="github Icon"
+                  className="w-8 h-8 mr-4"
+                  src="/images/logo/github-mark.png"
+                />
+              </a>
             </div>
           </div>
-          <div className="text-white text-2xl w-1/2 px-6">
-            <div className="sticky top-0">
-              <div className="bg-gray-300 p-4 rounded-md shadow-md">
-                <p>Web開発のソフトウェアエンジニアを目指しています。</p>
-                <p>よしなに動く、ツールや言語が好きです。</p>
-                <p>地道にぼちぼち進めることがモットーです。</p>
-              </div>
+          <div className="flex items-center justify-center w-2/3">
+            <div className="bg-gray-300 p-4 rounded-md shadow-md overflow-y-auto">
+              <p className="text-white text-2xl">
+                Web開発の、ジュニアエンジニアを目指しています。
+              </p>
+              <p className="text-white text-2xl">
+                よしなに動く、ツールや言語が好きです。
+              </p>
+              <p className="text-white text-2xl">
+                地道にぼちぼち進めることが、モットーです。
+              </p>
+              <p className="text-white text-2xl">
+                エンジニアの実務経験としては、アルバイトでテスターやテスト自動化（未達）を経験しています。
+              </p>
             </div>
           </div>
         </div>
