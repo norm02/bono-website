@@ -34,7 +34,7 @@ const Meta = ({
       <meta name="theme-color" content="#65a30d" />
       {/* noIndex === true の場合のみ noindex 有効化 */}
       {noIndex && <meta name="robots" content="noindex" />}
-      <link rel="shortcut icon" href="/favicon.ico" />
+      <link rel="shortcut icon" href="/miso-icon.ico" />
     </Head>
   );
 };

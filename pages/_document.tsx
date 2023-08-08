@@ -23,7 +23,7 @@ class MyDocument extends Document<Props> {
     return (
       <Html>
         <Head>
-          <link rel="shortcut icon" href="/favicon.ico" />
+          <link rel="shortcut icon" href="/miso-icon.ico" />
         </Head>
         <body>
           <Main />

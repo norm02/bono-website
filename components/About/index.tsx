@@ -2,61 +2,25 @@ import type { NextPage } from "next";
 
 const About: NextPage = () => {
   return (
-    <div
-      id="About"
-      className="text-white py-20 px-6 bg-slate-700/[.70] md:h-screen min-h-[800px] flex justify-center items-center"
-    >
-      <div className="flex flex-1 flex-col gap-8 w-11/12 justify-center items-center m-auto max-w-2xl">
-        <div className="text-4xl font-raleway font-semibold">About</div>
-        <div className="text-sm font-kosugimaru">
-          このサイトは{" "}
-          <a className="link" href="" target="_blank" rel="noopener noreferrer">
-            bono
-          </a>{" "}
-          のポートフォリオサイトです。
-        </div>
-        <div className="font-kosugimaru card md:w-96 w-60 bg-base-100 text-gray-900 shadow-xl">
-          <ul className="card-body flex flex-col gap-2 text-left font-raleway">
-            <div className="card-title md:text-xl text-lg font-raleway font-semibold">
-              Items used
+    <div id="About" className="bg-blue-300 px-6 min-h-screen">
+      <div className=" flex flex-1 flex-col w-11/12 justify-center items-center m-auto max-w-2xl">
+        <div className="text-white pt-40 pb-20 text-4xl">ABOUT</div>
+        <div className="flex flex-row justify-center items-center">
+          <div className="img-container w-1/2 relative">
+            <img src="/images/miso-icon.png" alt="About Image" />
+            <div className="bg-blue-100 mb-4 p-2 rounded-md shadow-md text-center w-full">
+              <p className="">bono</p>
             </div>
-            <li className="flex gap-2 md:text-base text-sm">
-              <img src="./images/check-icon.png" />
-              Framework:{" "}
-              <a
-                className="link"
-                href="https://nextjs.org/"
-                target={"_blank"}
-                rel="noopener noreferrer"
-              >
-                Next.js
-              </a>
-            </li>
-            <li className="flex gap-2 md:text-base text-sm">
-              <img src="./images/check-icon.png" />
-              CSS :{" "}
-              <a
-                className="link"
-                href="https://tailwindcss.com/"
-                target={"_blank"}
-                rel="noopener noreferrer"
-              >
-                Tailwind CSS
-              </a>
-            </li>
-            <li className="flex gap-2 md:text-base text-sm">
-              <img src="./images/check-icon.png" />
-              Hosted by:{" "}
-              <a
-                className="link"
-                href="https://vercel.com/"
-                target={"_blank"}
-                rel="noopener noreferrer"
-              >
-                Vercel
-              </a>
-            </li>
-          </ul>
+          </div>
+          <div className="text-white text-2xl w-1/2 px-6">
+            <div className="sticky top-0">
+              <div className="bg-gray-300 p-4 rounded-md shadow-md">
+                <p>Web開発のソフトウェアエンジニアを目指しています。</p>
+                <p>よしなに動く、ツールや言語が好きです。</p>
+                <p>地道にぼちぼち進めることがモットーです。</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

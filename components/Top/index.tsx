@@ -4,12 +4,24 @@ const Top: NextPage = () => {
   return (
     <div
       id="Welcome"
-      className="flex flex-col justify-center items-center py-20 md:py-30"
+      className="bg-white h-screen flex flex-col justify-center items-center"
     >
-      <div className="mockup-window bg-slate-400 md:w-9/12 w-10/12 shadow-2xl max-w-5xl">
-        <div className="flex flex-col justify-center items-center gap-4 bg-slate-500 bg-opacity-90 py-10">
-          <div className="relative md:w-60 md:h-60 w-40 h-40">
-            <img className="mask mask-squircle" src="/images/toppage.png" />
+      <div className="bg-gray-200 w-4/5 h-4/5 rounded-lg shadow-lg flex flex-col justify-center items-center">
+        <div className="bg-orange-300 w-2/3 h-48 rounded-lg shadow-lg flex justify-center item-center">
+          <p className="text-white text-2xl font-bold flex items-center justify-center">
+            bono-website
+          </p>
+        </div>
+        <br />
+        <div className="flex justify-center gap-4">
+          <div className="bg-yellow-300 w-48 h-48 rounded-lg shadow-lg flex justify-center items-center">
+            <p className="text-white text-2xl font-bold">ABOUT</p>
+          </div>
+          <div className="bg-green-300 w-48 h-48 rounded-lg shadow-lg flex justify-center items-center">
+            <p className="text-white text-2xl font-bold">SKILLS</p>
+          </div>
+          <div className="bg-blue-300 w-48 h-48 rounded-lg shadow-lg flex justify-center items-center">
+            <p className="text-white text-2xl font-bold">BLOG</p>
           </div>
         </div>
       </div>
