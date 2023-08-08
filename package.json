@@ -23,6 +23,7 @@
     "react-dom": "18.2.0",
     "react-gtm-module": "^2.0.11",
     "react-mark": "^0.0.4",
+    "react-scroll": "^1.8.9",
     "rehype-parse": "^8.0.4",
     "rehype-react": "^7.2.0",
     "rehype-slug": "^5.1.0",

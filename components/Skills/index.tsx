@@ -4,7 +4,7 @@ const Skills: NextPage = () => {
   return (
     <div id="skills" className="px-6 min-h-screen">
       <div className=" flex flex-1 flex-col w-11/12 justify-center items-center m-auto max-w-2xl">
-        <div className="pt-40 pb-20 text-4xl">MY SKILLS</div>
+        <div className="pt-40 pb-5 text-4xl">MY SKILLS</div>
       </div>
       <div className="w-full h-full flex justify-between">
         <div className="w-1/3 bg-gray-300 p-2 m-4 rounded-md">
