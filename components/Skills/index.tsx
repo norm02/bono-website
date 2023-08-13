@@ -31,7 +31,12 @@ const Skills: NextPage = () => {
               <li className="bg-white rounded-md p-2 mb-2">TypeScript</li>
               <li className="bg-white rounded-md p-2 mb-2">TailwindCSS</li>
             </ul>
-            <li className="bg-white rounded-md p-2 mb-2">Cypress</li>
+            <li className="bg-white rounded-md p-2 mb-2">Test Automation</li>
+            <ul className="pl-4">
+              <li className="bg-white rounded-md p-2 mb-2">Jest/Vitest</li>
+              <li className="bg-white rounded-md p-2 mb-2">Testing Library</li>
+              <li className="bg-white rounded-md p-2 mb-2">Cypress</li>
+            </ul>
             <li className="bg-white rounded-md p-2 mb-2">GoogleCloud</li>
           </ul>
         </div>
