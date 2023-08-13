@@ -1,19 +1,52 @@
-import { describe, expect, it } from "vitest";
-import { render, screen, within } from "@testing-library/react";
+import { vi, describe, expect, it } from "vitest";
+import { render, screen } from "@testing-library/react";
 import Top from "../components/Top/index";
+import { Link } from "react-scroll";
 
-describe("Topコンポーネントの単体テスト", () => {
-  it("Top画面の文字を確認する", () => {
-    //bono-website
+//react-scrollのLinkコンポーネントをモック化する
+//Linkを<a>タグに変換する
+vi.mock("react-scroll", () => ({
+  Link: vi
+    .fn()
+    .mockImplementation(({ children, ...rest }) => <a {...rest}>{children}</a>),
+}));
+
+describe("Topコンポーネントのテスト", () => {
+  it("Top画面のテキストを確認する", () => {
     render(<Top />);
-    expect(screen.getByText("bono-website"));
+
+    const titleText = screen.getByText("bono-website");
+    const aboutText = screen.getByText("ABOUT");
+    const skillsText = screen.getByText("SKILLS");
+    const achievementText = screen.getByText("ACHIEVEMENT");
+
+    expect(titleText).toBeInTheDocument();
+    expect(aboutText).toBeInTheDocument();
+    expect(skillsText).toBeInTheDocument();
+    expect(achievementText).toBeInTheDocument();
   });
-  it("Top画面の文字をクリックした時の挙動を確認する", () => {
-    //bono-websiteをクリックしてもどこにも遷移しないことを確認する
+  it("クリックするとスクロールする挙動をモックテストする", () => {
     render(<Top />);
-    expect(screen.getByText("bono-website"));
-    const bonoWebsite = screen.getByText("bono-website");
-    bonoWebsite.click();
-    expect(screen.getByText("bono-website").getAttribute("href")).not.toBe("/");
+    expect(Link).toHaveBeenCalledWith(
+      expect.objectContaining({
+        to: "about",
+        smooth: true,
+      }),
+      {}
+    );
+    expect(Link).toHaveBeenCalledWith(
+      expect.objectContaining({
+        to: "skills",
+        smooth: true,
+      }),
+      {}
+    );
+    expect(Link).toHaveBeenCalledWith(
+      expect.objectContaining({
+        to: "achievement",
+        smooth: true,
+      }),
+      {}
+    );
   });
 });
