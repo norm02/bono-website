@@ -13,11 +13,7 @@ const Achievement: NextPage = () => {
               rel="noopener noreferrer"
             >
               <div className="bg-gray-300 p-4 rounded-md shadow-md flex flex-col items-center justify-center hover:shadow-lg transition duration-300">
-                <img
-                  alt="TechTrain"
-                  className="w-1/4 mb-4"
-                  src="/images/website-icon.png"
-                />
+                <img className="w-1/4 mb-4" src="/images/website-icon.png" />
                 <p className="text-white text-2xl">TechTrain</p>
               </div>
             </a>
@@ -27,11 +23,7 @@ const Achievement: NextPage = () => {
               rel="noopener noreferrer"
             >
               <div className="bg-gray-300 p-4 rounded-md shadow-md flex flex-col items-center justify-center hover:shadow-lg transition duration-300">
-                <img
-                  alt="GoogleCloud SkillBoost"
-                  className="w-1/4 mb-4"
-                  src="/images/cloud-icon.png"
-                />
+                <img className="w-1/4 mb-4" src="/images/cloud-icon.png" />
                 <p className="text-white text-2xl">GoogleCloud SkillBoost</p>
               </div>
             </a>
@@ -41,11 +33,7 @@ const Achievement: NextPage = () => {
               rel="noopener noreferrer"
             >
               <div className="bg-gray-300 p-4 rounded-md shadow-md flex flex-col items-center justify-center hover:shadow-lg transition duration-300">
-                <img
-                  alt="Nishika"
-                  className="w-1/4 mb-4"
-                  src="/images/bar-icon.png"
-                />
+                <img className="w-1/4 mb-4" src="/images/bar-icon.png" />
                 <p className="text-white text-2xl">Nishika</p>
               </div>
             </a>
@@ -55,11 +43,7 @@ const Achievement: NextPage = () => {
               rel="noopener noreferrer"
             >
               <div className="bg-gray-300 p-4 rounded-md shadow-md flex flex-col items-center justify-center hover:shadow-lg transition duration-300">
-                <img
-                  alt="SIGNATE"
-                  className="w-1/4 mb-4"
-                  src="/images/model-icon.png"
-                />
+                <img className="w-1/4 mb-4" src="/images/model-icon.png" />
                 <p className="text-white text-2xl">SIGNATE</p>
               </div>
             </a>

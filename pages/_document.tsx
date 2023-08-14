@@ -21,7 +21,7 @@ class MyDocument extends Document<Props> {
 
   render(): JSX.Element {
     return (
-      <Html>
+      <Html lang="ja">
         <Head>
           <link rel="shortcut icon" href="/miso-icon.ico" />
         </Head>

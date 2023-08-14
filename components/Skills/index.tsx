@@ -8,7 +8,9 @@ const Skills: NextPage = () => {
       </div>
       <div className="w-full h-full flex justify-between">
         <div className="w-1/3 bg-gray-300 p-2 m-4 rounded-md">
-          <h2 className="text-white mb-2">TODO</h2>
+          <h2 className="text-white mb-2" tabIndex={0}>
+            TODO
+          </h2>
           <ul className="">
             <li className="bg-white rounded-md p-2 mb-2">BackEnd</li>
             <ul className="pl-4">
@@ -23,7 +25,9 @@ const Skills: NextPage = () => {
           </ul>
         </div>
         <div className="w-1/3 bg-gray-300 p-2 m-4 rounded-md mx-4">
-          <h2 className="text-white mb-2">IN PROGRESS</h2>
+          <h2 className="text-white mb-2" tabIndex={0}>
+            IN PROGRESS
+          </h2>
           <ul className="">
             <li className="bg-white rounded-md p-2 mb-2">FrontEnd</li>
             <ul className="pl-4">
@@ -41,7 +45,9 @@ const Skills: NextPage = () => {
           </ul>
         </div>
         <div className="w-1/3 bg-gray-300 p-2 m-4 rounded-md">
-          <h2 className="text-white mb-2">DONE</h2>
+          <h2 className="text-white mb-2" tabIndex={0}>
+            DONE
+          </h2>
           <ul className="">
             <li className="bg-white rounded-md p-2 mb-2">AI</li>
             <ul className="pl-4">
