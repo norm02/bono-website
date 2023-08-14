@@ -17,21 +17,33 @@ const Top: NextPage = () => {
         <div className="flex justify-center gap-4">
           <div className="transition duration-300">
             <Link to={"about"} smooth>
-              <div className="bg-orange-300 text-white text-2xl font-bold w-48 h-48 rounded-lg shadow-lg flex justify-center items-center hover:bg-orange-400">
+              <div
+                className="bg-orange-300 text-white text-2xl font-bold w-48 h-48 rounded-lg shadow-lg flex justify-center items-center hover:bg-orange-400"
+                role="button"
+                tabIndex={0}
+              >
                 <p>ABOUT</p>
               </div>
             </Link>
           </div>
           <div className="transition duration-300">
             <Link to={"skills"} smooth>
-              <div className="bg-green-300 text-white text-2xl font-bold w-48 h-48 rounded-lg shadow-lg flex justify-center items-center hover:bg-green-400">
+              <div
+                className="bg-green-300 text-white text-2xl font-bold w-48 h-48 rounded-lg shadow-lg flex justify-center items-center hover:bg-green-400"
+                role="button"
+                tabIndex={0}
+              >
                 <p>SKILLS</p>
               </div>
             </Link>
           </div>
           <div className="transition duration-300">
             <Link to={"achievement"} smooth>
-              <div className="bg-indigo-300 text-white text-2xl font-bold w-48 h-48 rounded-lg shadow-lg flex justify-center items-center hover:bg-indigo-400">
+              <div
+                className="bg-indigo-300 text-white text-2xl font-bold w-48 h-48 rounded-lg shadow-lg flex justify-center items-center hover:bg-indigo-400"
+                role="button"
+                tabIndex={0}
+              >
                 ACHIEVEMENT
               </div>
             </Link>
