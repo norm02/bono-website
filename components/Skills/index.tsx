@@ -7,7 +7,7 @@ const Skills: NextPage = () => {
         <div className="pt-40 pb-5 text-4xl">MY SKILLS</div>
       </div>
       <div className="w-full h-full flex justify-between">
-        <div className="w-1/3 bg-gray-300 p-2 m-4 rounded-md">
+        <div className="w-1/3 bg-gray-500 p-2 m-4 rounded-md">
           <h2 className="text-white mb-2" tabIndex={0}>
             TODO
           </h2>
@@ -24,7 +24,7 @@ const Skills: NextPage = () => {
             </ul>
           </ul>
         </div>
-        <div className="w-1/3 bg-gray-300 p-2 m-4 rounded-md mx-4">
+        <div className="w-1/3 bg-gray-500 p-2 m-4 rounded-md mx-4">
           <h2 className="text-white mb-2" tabIndex={0}>
             IN PROGRESS
           </h2>
@@ -44,7 +44,7 @@ const Skills: NextPage = () => {
             <li className="bg-white rounded-md p-2 mb-2">GoogleCloud</li>
           </ul>
         </div>
-        <div className="w-1/3 bg-gray-300 p-2 m-4 rounded-md">
+        <div className="w-1/3 bg-gray-500 p-2 m-4 rounded-md">
           <h2 className="text-white mb-2" tabIndex={0}>
             DONE
           </h2>
