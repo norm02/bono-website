@@ -12,7 +12,7 @@ const Achievement: NextPage = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="bg-gray-300 p-4 rounded-md shadow-md flex flex-col items-center justify-center hover:shadow-lg transition duration-300">
+              <div className="bg-gray-500 p-4 rounded-md shadow-md flex flex-col items-center justify-center hover:shadow-lg transition duration-300">
                 <img
                   className="w-1/4 mb-4"
                   src="/images/website-icon.png"
@@ -26,7 +26,7 @@ const Achievement: NextPage = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="bg-gray-300 p-4 rounded-md shadow-md flex flex-col items-center justify-center hover:shadow-lg transition duration-300">
+              <div className="bg-gray-500 p-4 rounded-md shadow-md flex flex-col items-center justify-center hover:shadow-lg transition duration-300">
                 <img
                   className="w-1/4 mb-4"
                   src="/images/cloud-icon.png"
@@ -40,7 +40,7 @@ const Achievement: NextPage = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="bg-gray-300 p-4 rounded-md shadow-md flex flex-col items-center justify-center hover:shadow-lg transition duration-300">
+              <div className="bg-gray-500 p-4 rounded-md shadow-md flex flex-col items-center justify-center hover:shadow-lg transition duration-300">
                 <img
                   className="w-1/4 mb-4"
                   src="/images/bar-icon.png"
@@ -54,7 +54,7 @@ const Achievement: NextPage = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="bg-gray-300 p-4 rounded-md shadow-md flex flex-col items-center justify-center hover:shadow-lg transition duration-300">
+              <div className="bg-gray-500 p-4 rounded-md shadow-md flex flex-col items-center justify-center hover:shadow-lg transition duration-300">
                 <img
                   className="w-1/4 mb-4"
                   src="/images/model-icon.png"

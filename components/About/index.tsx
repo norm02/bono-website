@@ -52,7 +52,7 @@ const About: NextPage = () => {
             </div>
           </div>
           <div className="flex items-center justify-center w-2/3">
-            <div className="bg-gray-300 p-4 rounded-md shadow-md overflow-y-auto">
+            <div className="bg-gray-500 p-4 rounded-md shadow-md overflow-y-auto">
               <p className="text-white text-2xl">
                 Web開発の、ジュニアエンジニアを目指しています。
               </p>
