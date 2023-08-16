@@ -1,6 +1,7 @@
 describe("TopからFooterまでの一通りの動きをテストする", () => {
   beforeEach(() => {
     cy.visit("/");
+    cy.injectAxe();
   });
   it("Topのテキストやスクロールをテストする", () => {
     cy.get("#top").contains("bono-website");
@@ -14,5 +15,8 @@ describe("TopからFooterまでの一通りの動きをテストする", () => {
     cy.get("#top").contains("ACHIEVEMENT");
     cy.get(".bg-indigo-300").click();
     cy.contains("ACHIEVEMENT").should("be.visible");
+  });
+  it("cy-axeでアクセシビリティをテストする", () => {
+    cy.checkA11y();
   });
 });
