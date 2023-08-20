@@ -1,10 +1,10 @@
 import type { NextPage } from "next";
-import About from "../components/About/index";
-import Footer from "../components/Footer/index";
-import Skills from "../components/Skills/index";
-import Top from "../components/Top/index";
-import Achievement from "../components/Achievement";
-import Meta from "../components/_common/Meta";
+import About from "../components/layouts/About/index";
+import Footer from "../components/layouts/Footer/index";
+import Skills from "../components/layouts/Skills/index";
+import Top from "../components/layouts/Top/index";
+import Achievement from "../components/layouts/Achievement";
+import Meta from "../components/layouts/_common/Meta";
 
 const Home: NextPage = () => {
   return (
