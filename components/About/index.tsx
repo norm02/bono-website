@@ -51,7 +51,7 @@ const About: NextPage = () => {
               </a>
             </div>
           </div>
-          <div className="flex items-center justify-center w-2/3">
+          <div className="flex items-center justify-center w-2/3 pb-8 pl-4">
             <div className="bg-gray-100 p-4 rounded-md shadow-md overflow-y-auto">
               <p className="text-gray-600 text-2xl">
                 Web開発の、ジュニアエンジニアを目指しています。
