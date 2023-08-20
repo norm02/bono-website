@@ -28,7 +28,7 @@ const Meta = ({
       <meta property="description" content={description} />
       <meta property="site_name" content={siteName} />
       <meta property="locale" content="ja_JP" />
-      <meta name="viewport" content="width=device-width" />
+      <meta name="viewport" content="width=device-width,initial-scale=1"/>
       <meta name="format-detection" content="telephone=no" />
       {/* noIndex === true の場合のみ noindex 有効化 */}
       {noIndex && <meta name="robots" content="noindex" />}
