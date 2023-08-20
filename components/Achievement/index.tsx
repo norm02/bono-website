@@ -32,7 +32,9 @@ const Achievement: NextPage = () => {
                   src="/images/cloud-icon.png"
                   alt="クラウドアイコン"
                 />
-                <p className="text-gray-600 text-2xl">GoogleCloud SkillBoost</p>
+                <p className="text-gray-600 text-xs text-center md:text-2xl">
+                  GoogleCloud SkillBoost
+                </p>
               </div>
             </a>
             <a
