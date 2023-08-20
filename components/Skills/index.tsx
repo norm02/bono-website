@@ -3,11 +3,11 @@ import type { NextPage } from "next";
 const Skills: NextPage = () => {
   return (
     <div id="skills" className="px-6 min-h-screen">
-      <div className=" flex flex-1 flex-col w-11/12 justify-center items-center m-auto max-w-2xl">
+      <div className=" flex flex-1 flex-col w-full justify-center items-center m-auto max-w-2xl">
         <div className="pt-40 pb-5 text-4xl">MY SKILLS</div>
       </div>
-      <div className="w-full h-full flex justify-between">
-        <div className="w-1/3 bg-gray-600 p-2 m-4 rounded-md">
+      <div className="w-full flex flex-col md:flex-row justify-center md:space-x-4">
+        <div className="w-full md:w-1/3 bg-gray-600 p-2 m-4 rounded-md mx-auto">
           <h2 className="text-white text-lg mb-2" tabIndex={0}>
             TODO
           </h2>
@@ -26,7 +26,7 @@ const Skills: NextPage = () => {
             </ul>
           </ul>
         </div>
-        <div className="w-1/3 bg-gray-600 p-2 m-4 rounded-md mx-4">
+        <div className="w-full md:w-1/3 bg-gray-600 p-2 m-4 rounded-md mx-auto">
           <h2 className="text-white text-lg mb-2" tabIndex={0}>
             IN PROGRESS
           </h2>
@@ -58,7 +58,7 @@ const Skills: NextPage = () => {
             </li>
           </ul>
         </div>
-        <div className="w-1/3 bg-gray-600 p-2 m-4 rounded-md">
+        <div className="w-full md:w-1/3 bg-gray-600 p-2 m-4 rounded-md mx-auto">
           <h2 className="text-white text-lg mb-2" tabIndex={0}>
             DONE
           </h2>
