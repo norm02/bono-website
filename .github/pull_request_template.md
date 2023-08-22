@@ -1,3 +1,8 @@
+### Close Issue
+
+（関連して Close できる Issue を書く）
+closes #
+
 ### As Is
 
 （今の状態を記載）
