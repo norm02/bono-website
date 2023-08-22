@@ -1,6 +1,6 @@
 ### Close Issue
 
-（関連して Close できる Issue を記載）
+（関連して Close できる Issue を書く）
 closes #
 
 ### As Is
