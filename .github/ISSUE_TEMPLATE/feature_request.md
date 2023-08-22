@@ -1,20 +1,23 @@
----
-name: Feature request
-about: Suggest an idea for this project
-title: ''
-labels: ''
-assignees: ''
+### As Is
 
----
+（今の状態を記載）
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+### To Be
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+（理想の状態を記載。タスク完了の条件にもなる。）
 
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
+### アクション
 
-**Additional context**
-Add any other context or screenshots about the feature request here.
+（改善のための、具体的なアクションを記載）
+
+- [ ]
+
+### 課題
+
+（現状、分かっている課題を記載）
+
+### 参考
+
+（参考になりそうな、公式等のドキュメントやサイトを記載）
+
+- [ ]
