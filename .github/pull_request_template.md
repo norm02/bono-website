@@ -1,6 +1,6 @@
 ## Close Issue
 
-（関連して Close できる Issue を書く）
+（関連して 、Close できる Issue を書く）
 
 ## As Is
 
