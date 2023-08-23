@@ -1,0 +1,54 @@
+name: プルリクエスト
+description: プルリクエストのフォームです。
+title: "[pull_request]: "
+labels: [""]
+assignees:
+  - ""
+body:
+  - type: markdown
+    attributes:
+      value: |
+        次のフォームに従って、機能追加のIssueを作成します。
+  - type: textarea
+    id: close-issue
+    attributes:
+      label: Close Issue
+      description: 関連して Close できる Issue を書きます。
+      placeholder: 例）closes #1
+    validations:
+      required: true
+  - type: textarea
+    id: as-is
+    attributes:
+      label: As-is
+      description: 今の状態を記載してください。
+    validations:
+      required: true
+  - type: textarea
+    id: to-be
+    attributes:
+      label: To-be
+      description: プルリク後の状態を記載してください。
+    validations:
+      required: true
+  - type: textarea
+    id: action
+    attributes:
+      label: アクション
+      description: 実際に起こした、具体的なアクションを記載してください。
+    validations:
+      required: true
+  - type: textarea
+    id:
+    attributes:
+      label: 課題
+      description: 現状、分かっている課題を記載してください。
+    validations:
+      required: true
+  - type: textarea
+    id: reference
+    attributes:
+      label: 参考
+      description: 参考になりそうな、公式等のドキュメントやサイトを記載してください。
+    validations:
+      required: true
