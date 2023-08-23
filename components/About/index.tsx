@@ -54,10 +54,10 @@ const About: NextPage = () => {
           <div className="flex items-center justify-center w-2/3 pb-8 pl-4">
             <div className="bg-gray-100 p-4 rounded-md shadow-md overflow-y-auto">
               <p className="text-gray-600 text-2xl">
-                Web開発の、ジュニアエンジニアを目指しています。
+                よしなに動く、ツールや言語が好きです。
               </p>
               <p className="text-gray-600 text-2xl">
-                よしなに動く、ツールや言語が好きです。
+                モダンな技術が好きで、実装することが楽しいです。
               </p>
               <p className="text-gray-600 text-2xl">
                 地道にぼちぼち進めることが、モットーです。
