@@ -176,6 +176,7 @@ const Skills: NextPage = () => {
                   <li
                     key={skill.name}
                     className="bg-white text-base rounded-md p-2 mb-2"
+                    tabIndex={-1}
                   >
                     <a href={skill.pickup && skill.pickup[0].url}>
                       {skill.name}
@@ -184,6 +185,7 @@ const Skills: NextPage = () => {
                       <div
                         className={`bg-blue-500 h-full rounded-md`}
                         style={{ width: getProgressBarWidth(skill.score) }}
+                        tabIndex={-1}
                       ></div>
                     </div>
                     {skill.pickup && (
@@ -198,6 +200,7 @@ const Skills: NextPage = () => {
                               target="_blank"
                               rel="noopener noreferrer"
                               className="text-blue-500 hover:underline"
+                              tabIndex={-1}
                             >
                               {pickup.title}
                             </a>
