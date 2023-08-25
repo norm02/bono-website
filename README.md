@@ -8,4 +8,4 @@ Open http://localhost:3000 with your browser to see the result.
 
 # Site
 
-https://bono-website.vercel.app/
+www.bono-website.com/
