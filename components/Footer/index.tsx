@@ -7,7 +7,7 @@ const Footer: NextPage = () => {
       <Link href="/privacyPolicy">
         <div className="font-raleway text-xs mr-4">プライバシーポリシー</div>
       </Link>
-      <div className="font-raleway text-sm">©bono</div>
+      <div className="font-raleway text-sm">©2023 bono</div>
     </div>
   );
 };
