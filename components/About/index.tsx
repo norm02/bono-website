@@ -45,7 +45,7 @@ const About: NextPage = () => {
                 ]}
               />
               <SkillSection
-                title="得意スキル"
+                title="得意な言語・フレームワークなど"
                 skills={[
                   "JavaScript",
                   "Playwright",
@@ -54,15 +54,15 @@ const About: NextPage = () => {
                 ]}
               />
               <SkillSection
-                title="伸ばしたいスキル"
+                title="伸ばしたい言語・フレームワークなど"
                 skills={["TypeScript", "React"]}
               />
               <SkillSection
-                title="得意にしたい分野"
+                title="得意にしたいこと"
                 skills={["フロントエンド", "自動テスト"]}
               />
               <SkillSection
-                title="興味がある分野"
+                title="興味があること"
                 skills={["セキュリティ", "Google Cloud"]}
               />
             </div>
