@@ -2,69 +2,69 @@ import type { NextPage } from "next";
 
 const About: NextPage = () => {
   return (
-    <div id="about" className="bg-blue-100 px-6 min-h-screen">
-      <div className="flex flex-col items-center justify-center w-11/12 max-w-2xl m-auto">
-        <div className="text-blue-600 text-4xl pt-40">ABOUT ME</div>
-        <div className="flex items-center justify-center mt-8">
-          <div className="flex flex-col items-center justify-center w-1/3">
+    <div id="about" className="bg-blue-100 px-6 py-20 min-h-screen">
+      <div className="max-w-4xl mx-auto">
+        <h2 className="text-blue-600 text-4xl text-center mb-12">ABOUT ME</h2>
+        <div className="flex flex-col md:flex-row items-center justify-between">
+          <div className="md:w-1/3 mb-8 md:mb-0">
             <img
               alt="About Image"
-              className="w-1/2 transform transition duration-300 hover:-translate-y-2"
+              className="w-40 h-40 mx-auto rounded-full shadow-lg transform transition duration-300 hover:-translate-y-2"
               src="/images/miso-icon.png"
             />
-            <div className="text-blue-600 p-2 text-center w-44 rounded-md text-2xl mb-4">
+            <div className="text-blue-600 text-center text-2xl mt-4 mb-6">
               bono
             </div>
-            <div className="flex items-center justify-center mt-4">
-              <a
+            <div className="flex justify-center space-x-4">
+              <SocialLink
                 href="https://twitter.com/bonomodel"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <img
-                  alt="X Icon"
-                  className="w-8 h-8 mr-4 transform transition duration-300 hover:-translate-y-2"
-                  src="/images/logo/x-logo.png"
-                />
-              </a>
-              <a
+                src="/images/logo/x-logo.png"
+                alt="X Icon"
+              />
+              <SocialLink
                 href="https://bonomodel.hatenablog.com/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <img
-                  alt="hatena Icon"
-                  className="w-12 h-12 mr-4 transform transition duration-300 hover:-translate-y-2"
-                  src="/images/logo/hatenablog-logo.svg"
-                />
-              </a>
-              <a
+                src="/images/logo/hatenablog-logo.svg"
+                alt="Hatena Icon"
+                className="w-12 h-12"
+              />
+              <SocialLink
                 href="https://github.com/norm02"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <img
-                  alt="github Icon"
-                  className="w-8 h-8 mr-4 transform transition duration-300 hover:-translate-y-2"
-                  src="/images/logo/github-mark.png"
-                />
-              </a>
+                src="/images/logo/github-mark.png"
+                alt="GitHub Icon"
+              />
             </div>
           </div>
-          <div className="flex items-center justify-center w-2/3 pb-8 pl-4">
-            <div className="bg-gray-100 p-4 rounded-md shadow-md overflow-y-auto">
-              <p className="text-gray-600 text-2xl">
-                よしなに動く、ツールや言語が好きです。
-              </p>
-              <p className="text-gray-600 text-2xl">
-                モダンな技術が好きで、実装することが楽しいです。
-              </p>
-              <p className="text-gray-600 text-2xl">
-                地道にぼちぼち進めることが、モットーです。
-              </p>
-              <p className="text-gray-600 text-2xl">
-                アルバイトでテスターを経験し、テスト自動化に取り組んでいます。
-              </p>
+          <div className="md:w-2/3 md:pl-8">
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <CharacteristicSection
+                characteristics={[
+                  "黙々と地道に手を動かすことが得意",
+                  "実績のある新しい技術を活用し、既存のものに少し手を加えるのが得意",
+                  "体系的な学習アプローチを好む",
+                  "集中力を活かしたシングルタスクの遂行力",
+                ]}
+              />
+              <SkillSection
+                title="得意スキル"
+                skills={[
+                  "JavaScript",
+                  "Playwright",
+                  "Cypress",
+                  "GitHub Actions",
+                ]}
+              />
+              <SkillSection
+                title="伸ばしたいスキル"
+                skills={["TypeScript", "React"]}
+              />
+              <SkillSection
+                title="得意にしたい分野"
+                skills={["フロントエンド", "自動テスト"]}
+              />
+              <SkillSection
+                title="興味がある分野"
+                skills={["セキュリティ", "Google Cloud"]}
+              />
             </div>
           </div>
         </div>
@@ -72,5 +72,34 @@ const About: NextPage = () => {
     </div>
   );
 };
+
+const SocialLink = ({ href, src, alt, className = "w-8 h-8" }) => (
+  <a href={href} rel="noopener noreferrer" target="_blank">
+    <img
+      alt={alt}
+      className={`${className} transform transition duration-300 hover:-translate-y-2`}
+      src={src}
+    />
+  </a>
+);
+
+const CharacteristicSection = ({ characteristics }) => (
+  <div className="mb-6">
+    <ul className="list-disc list-inside text-gray-700">
+      {characteristics.map((characteristic, index) => (
+        <li key={index} className="mb-2">
+          {characteristic}
+        </li>
+      ))}
+    </ul>
+  </div>
+);
+
+const SkillSection = ({ title, skills }) => (
+  <div className="mb-4">
+    <h4 className="text-lg font-semibold text-blue-600 mb-2">{title}</h4>
+    <p className="text-gray-700">{skills.join(" / ")}</p>
+  </div>
+);
 
 export default About;
