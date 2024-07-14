@@ -55,7 +55,7 @@ export default function AllArticles() {
     <div className="min-h-screen bg-blue-50 py-16 px-4">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-4xl font-bold text-center text-gray-800 mb-12">
-          All Articles
+          All ARTICLES
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {articles.map((article, index) => (
@@ -64,7 +64,7 @@ export default function AllArticles() {
               href={article.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:-translate-y-2 flex flex-col h-full"
+              className="article-card bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:-translate-y-2 flex flex-col h-full"
             >
               <div className="p-6 flex flex-col flex-grow">
                 {article.source === "Zenn" && article.emoji && (

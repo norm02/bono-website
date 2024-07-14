@@ -16,7 +16,7 @@ interface ArticlesProps {
 const Articles: React.FC<ArticlesProps> = ({ articles }) => {
   return (
     <section id="articles" className="bg-blue-50 py-16 px-4">
-      <h2 className="text-blue-600 text-4xl text-center mb-12">Articles</h2>
+      <h2 className="text-blue-600 text-4xl text-center mb-12">ARTICLES</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
         {articles.slice(0, 8).map((article, index) => (
           <Link
@@ -24,7 +24,7 @@ const Articles: React.FC<ArticlesProps> = ({ articles }) => {
             href={article.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:-translate-y-2 flex flex-col h-full"
+            className="article-card bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:-translate-y-2 flex flex-col h-full"
           >
             <div className="p-6 flex flex-col flex-grow">
               {article.source === "Zenn" && article.emoji && (

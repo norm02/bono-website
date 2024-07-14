@@ -36,7 +36,7 @@ const Top: NextPage = () => {
                   role="button"
                   tabIndex={0}
                 >
-                  <p>Articles</p>
+                  <p>ARTICLES</p>
                 </div>
               </div>
             </Link>
