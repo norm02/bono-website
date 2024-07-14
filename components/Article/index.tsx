@@ -16,9 +16,7 @@ interface ArticlesProps {
 const Articles: React.FC<ArticlesProps> = ({ articles }) => {
   return (
     <section id="articles" className="bg-blue-50 py-16 px-4">
-      <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">
-        Articles
-      </h2>
+      <h2 className="text-blue-600 text-4xl text-center mb-12">Articles</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
         {articles.slice(0, 8).map((article, index) => (
           <Link
