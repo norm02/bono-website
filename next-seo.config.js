@@ -4,7 +4,7 @@ export default {
   openGraph: {
     type: "website",
     locale: "ja_JP",
-    url: "https://localhost:3000/",
+    url: "https://www.bono-website.com/",
     site_name: "BLOG",
   },
 };

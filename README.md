@@ -2,9 +2,9 @@ bono-website
 
 # Getting Started
 
-npm run dev
+npm install
 
-Open http://localhost:3000 with your browser to see the result.
+npm run dev
 
 # Site
 
