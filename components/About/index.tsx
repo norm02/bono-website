@@ -17,7 +17,7 @@ const About: NextPage = () => {
             </div>
             <div className="flex justify-center space-x-4">
               <SocialLink
-                href="https://twitter.com/bonomodel"
+                href="https://x.com/bonomodel"
                 src="/images/logo/x-logo.png"
                 alt="X Icon"
               />
