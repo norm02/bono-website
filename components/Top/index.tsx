@@ -29,14 +29,14 @@ const Top: NextPage = () => {
             </Link>
           </div>
           <div className="flex flex-col items-center space-y-4 md:space-y-0 md:flex-row md:justify-center md:gap-4">
-            <Link to={"skills"} smooth>
+            <Link to={"articles"} smooth>
               <div className="flex flex-col items-center bg-blue-100 rounded-lg border-2 border-blue-500 hover:bg-blue-600">
                 <div
                   className="text-blue-600 text-lg md:text-2xl font-bold w-24 md:w-48 h-16 md:h-24 rounded-lg shadow-lg flex justify-center items-center hover:text-blue-100"
                   role="button"
                   tabIndex={0}
                 >
-                  <p>SKILLS</p>
+                  <p>Articles</p>
                 </div>
               </div>
             </Link>

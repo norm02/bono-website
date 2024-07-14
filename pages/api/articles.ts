@@ -46,14 +46,17 @@ const getHatenaData = async (url: string): Promise<string> => {
 // XMLから記事一覧と次の記事一覧のURIを抽出する。
 const extractItemsAndNextUri = async (
   data: string
-): Promise<{ entry: any[]; next_url: string }> => {
+): Promise<{ entry: any[]; next_url: string | null }> => {
   return new Promise((resolve, reject) => {
     xml2js.parseString(data, (err, result) => {
       if (err) {
         reject(err);
       } else {
         const entry = result.feed.entry;
-        const next_url = result.feed.link[1].$.href;
+        const nextLink = result.feed.link.find(
+          (link: any) => link.$.rel === "next"
+        );
+        const next_url = nextLink ? nextLink.$.href : null;
         resolve({ entry, next_url });
       }
     });
@@ -114,20 +117,22 @@ export default async function handler(
     let hatenaArticles: HatenaArticle[] = [];
     let url = hatenaUrl;
 
-    while (hatenaArticles.length < 5) {
+    while (true) {
       const xml_data = await getHatenaData(url);
       const { entry, next_url } = await extractItemsAndNextUri(xml_data);
       insertItems(entry, hatenaArticles);
+
+      if (!next_url) {
+        break;
+      }
       url = next_url;
     }
 
-    hatenaArticles = hatenaArticles.slice(0, 5);
-
     const zennArticles = await getZennArticles();
 
-    const allArticles = [...hatenaArticles, ...zennArticles]
-      .sort((a, b) => dayjs.utc(b.day).diff(dayjs.utc(a.day)))
-      .slice(0, 5);
+    const allArticles = [...hatenaArticles, ...zennArticles].sort((a, b) =>
+      dayjs.utc(b.day).diff(dayjs.utc(a.day))
+    );
 
     res.status(200).json(allArticles);
   } catch (error) {

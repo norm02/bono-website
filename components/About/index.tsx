@@ -25,7 +25,7 @@ const About: NextPage = () => {
                 href="https://bonomodel.hatenablog.com/"
                 src="/images/logo/hatenablog-logo.svg"
                 alt="Hatena Icon"
-                className="w-12 h-12"
+                className="w-10 h-10"
               />
               <SocialLink
                 href="https://github.com/norm02"

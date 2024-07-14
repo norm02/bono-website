@@ -64,20 +64,20 @@ export default function AllArticles() {
               href={article.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:-translate-y-2"
+              className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:-translate-y-2 flex flex-col h-full"
             >
-              <div className="h-full flex flex-col">
-                <div className="p-6 flex flex-col flex-grow">
-                  {article.source === "Zenn" && article.emoji && (
-                    <span className="text-4xl mb-4">{article.emoji}</span>
-                  )}
-                  <h3 className="text-xl font-semibold mb-4">
-                    {article.title}
-                  </h3>
-                  <div className="mt-auto flex justify-between text-sm text-gray-600">
-                    <span className="font-medium">{article.source}</span>
-                    <span>{article.day}</span>
-                  </div>
+              <div className="p-6 flex flex-col flex-grow">
+                {article.source === "Zenn" && article.emoji && (
+                  <span className="text-5xl mb-4">{article.emoji}</span>
+                )}
+                <h3 className="text-xl font-semibold mb-4 flex-grow">
+                  {article.title}
+                </h3>
+                <div className="mt-4 flex justify-between items-center text-sm text-gray-600">
+                  <span className="font-medium bg-gray-200 px-2 py-1 rounded">
+                    {article.source}
+                  </span>
+                  <span>{article.day}</span>
                 </div>
               </div>
             </Link>
@@ -86,7 +86,7 @@ export default function AllArticles() {
         <div className="mt-12 text-center">
           <button
             onClick={() => router.back()}
-            className="bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600 transition-colors"
+            className="bg-blue-500 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-600 transition-colors"
           >
             Back to Home
           </button>
