@@ -55,7 +55,7 @@ const About: NextPage = () => {
               />
               <SkillSection
                 title="伸ばしたい言語・フレームワークなど"
-                skills={["TypeScript", "React"]}
+                skills={["TypeScript", "Angular", "React"]}
               />
               <SkillSection
                 title="得意にしたいこと"
