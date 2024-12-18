@@ -3,7 +3,9 @@ import { test, expect } from "@playwright/test";
 test.beforeEach(async ({ page }, testInfo) => {
   await page.goto("https://bono-website.com");
   const channel_name = testInfo.project.use.channel;
-  console.log(channel_name);
+  const project_name = testInfo.project.name;
+  console.log(`実行ブラウザのチャンネル: ${channel_name}`);
+  console.log(`実行ブラウザのプロジェクト: ${project_name}`);
 });
 
 test("ナビゲーションメニューの機能テスト", async ({ page }) => {

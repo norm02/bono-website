@@ -35,7 +35,7 @@ export default defineConfig({
   /* Configure projects for major browsers */
   projects: [
     {
-      name: "Chrome",
+      name: "Chrome-Beta",
       use: { ...devices["Desktop Chrome"], channel: "chrome-beta" },
     },
   ],
